@@ -1,0 +1,55 @@
+Struktur Proyek
+# Struktur Proyek: People Flow Detection
+Proyek ini dirancang untuk mendeteksi dan melacak pergerakan orang dalam video menggunakan OpenCV dan Streamlit. Berikut adalah struktur direktori proyek:
+people_flow/
+├── app.py                    # File utama untuk antarmuka Streamlit
+├── detection.py              # Logika untuk deteksi dan pelacakan orang
+├── data/
+│   ├── reports/              # Folder untuk menyimpan laporan CSV
+├── requirements.txt          # Daftar dependensi proyek
+└── README.md                 # Dokumentasi proyek
+
+Prasyarat
+1. Versi Python: Python 3.12.6 (64-bit).
+2. Lingkungan: Gunakan Visual Studio Code atau IDE Python lainnya.
+3. Perangkat Keras: Webcam yang terhubung ke komputer.
+4. Sistem Operasi: Windows, macOS, atau Linux.
+
+Langkah Penyiapan
+-Buat Direktori Proyek:
+    1. Buat folder bernama people_flow.
+    2. Di dalamnya, buat subfolder data/reports untuk menyimpan laporan CSV.
+-Simpan File Kode:
+    1. Simpan app.py dan detection.py (dari artefak sebelumnya) di folder people_flow.
+- Siapkan Lingkungan Virtual:
+    1. Buka terminal di folder people_flow.
+    2. Jalankan perintah berikut untuk membuat lingkungan virtual:
+       ```
+       python -m venv venv
+       ```
+    3. Aktifkan lingkungan virtual:
+       - Windows: `venv\Scripts\activate`
+       - macOS/Linux: `source venv/bin/activate`
+- Instal Dependensi:
+    1. Buat file requirements.txt di folder people_flow dengan konten berikut:
+       ```
+       streamlit
+       opencv-python
+       pandas
+       numpy
+       ```
+    2. Instal dependensi dengan menjalankan perintah:
+       ```
+       pip install -r requirements.txt
+       ```
+
+- Jalankan Aplikasi:
+    1. Pastikan lingkungan virtual aktif.
+    2. Jalankan aplikasi Streamlit dengan perintah:
+       ```
+       streamlit run app.py
+       ```
+    3. Akses aplikasi di browser melalui URL yang ditampilkan di terminal (biasanya http://localhost:8501). 
+
+
+
